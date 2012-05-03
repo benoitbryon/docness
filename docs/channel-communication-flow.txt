@@ -1,0 +1,200 @@
+#######################################################
+Redirect information to the right communication channel
+#######################################################
+
+Documentation is a communication channel for development team or users.
+It is suitable to receive, store and send some information.
+But there are communication flows you should redirect to other channels.
+
+Here are tips about content you shouldn't put in documentation. These patterns
+have poor value in documentation.
+
+
+*******
+Scripts
+*******
+
+Documentation should not contain list of commands. Scripts are made for that
+purpose.
+
+As an example, installation procedures are usually written in documentation.
+But, when they become quite long, they should be simplified with scripts.
+
+It doesn't means that you can't write some INSTALL document. It means that
+INSTALL document should be easy to read and use.
+
+Yes:
+
+.. code-block:: rst
+
+  .. code-block:: sh
+
+    make install
+
+No:
+
+.. code-block:: rst
+
+  .. code-block:: sh
+
+    # Install system dependencies.
+    # If you are on Debian and have sudo installed:
+    sudo aptitude --without-recommends python python-dev virtualenv
+    # Get the source.
+    git clone git://demo@example.com
+    # Create a virtual environment.
+    virtualenv demo
+    source demo/bin/activate
+    cd demo/
+    # Install Python packages.
+    pip install -r requirements.txt
+
+As any piece of code, scripts have to be self-documented, readable, put in the
+right place...
+
+Some documentation may be generated from scripts, but not the opposite.
+Documentation is not the place where to maintain scripts.
+
+
+******************
+Code API reference
+******************
+
+External documentation is not the place where to maintain code API reference.
+Code should be self-documented.
+
+It doesn't mean documentation cannot deal with API: it is a suitable
+place to provide tutorials or recipes, to focus on topics or workflows... It
+means that external documentation is not intended to replace inline code
+documentation.
+
+As an example, `Sphinx`_ users can generate API reference from code then
+include it to Sphinx documentation with `Sphinx's autodoc extension`_.
+
+
+*************
+Configuration
+*************
+
+Documentation is not intended to contain configuration. Configuration is
+meant to be consumed by scripts or similar tools.
+
+As code, configuration should be readable.
+As code, effective (production) configuration is the reference. Documentation
+may be generated from it, but not the opposite.
+
+As an example, consider system architecture. In some "Architecture" document,
+you describe relationships between servers and clients:
+
+* you may put some schemas or diagrams in the documentation, so that you give
+  users an overview of the architecture.
+* you shouldn't write server names in the documentation. You'd better reference
+  the configuration of your environments.
+* utilities you use for deployment, network management or monitoring should
+  provide comprehensive views, or at least entry points so that you could
+  generate comprehensive views.
+
+Yes:
+
+.. code-block:: rst
+
+  Here is an overview of the architecture:
+
+  .. image:: /_static/architecture-diagram.svg
+
+  Architecture configuration is consumed by deployment tools:
+
+  * `Production <https://example.com/deployment>`_
+  * `Staging <https://staging.example.com/deployment>`_
+
+  Monitoring gives you information about servers:
+
+  * `Production <https://example.com/monitoring>`_
+  * `Staging <https://staging.example.com/monitoring>`_
+
+No:
+
+.. code-block:: rst
+
+  In production environment:
+
+  * ``www.example.com`` is a Debian Squeeze server with, 4Go RAM and 20Go HDD.
+    It serves:
+
+    * the frontend, with Django 1.2
+    * PostgreSQL server, version 8.4
+    * Memcache
+
+  * ``static.example.com`` is a FreeBSD server with 256Mo RAM and 500Go HDD.
+    It serves static files with Nginx.
+
+Configuration will not be maintained in documentation. Thus it is to become
+obsolete, wrong and could lead to errors, misunderstanding... i.e. it has
+negative impact.
+
+
+*********
+Templates
+*********
+
+Avoid the copy-paste-adapt pattern in documentation. Replace it by interactive
+scripts, configuration files and templates.
+
+Yes:
+
+.. code-block:: rst
+
+  Configure deployment:
+
+  .. code-block:: sh
+
+    make configure
+
+Yes:
+
+.. code-block:: rst
+
+  Use paster to generate Buildout configuration:
+
+  .. code-block:: sh
+
+    bin/paster create -t buildout_configuration etc/buildout
+
+No:
+
+.. code-block:: rst
+
+  Copy the following content to ``settings.py`` file somewhere in your sys.path
+  then adapt it to your needs:
+
+  .. code-block:: python
+
+    from myproject.default_settings import *
+
+    DEBUG = True
+
+
+****
+TODO
+****
+
+Consider the documentation as code. If it doesn't work or it isn't "finished",
+it should not be committed. So avoid "maybe" or "todo" patterns in
+documentation:
+
+* if resolution is important, fix it now.
+* if resolution can be postponed, create a ticket (bug or task), so that it can
+  be prioritized. Then remove "todo" from documentation.
+
+As an example, don't use `Sphinx's todo extension`_.
+
+
+**********
+References
+**********
+
+.. target-notes::
+
+.. _`Sphinx`: http://sphinx.pocoo.org
+.. _`Sphinx's autodoc extension`: http://sphinx.pocoo.org/ext/autodoc.html
+.. _`Sphinx's todo extension`: http://sphinx.pocoo.org/ext/todo.html

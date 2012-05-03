@@ -1,0 +1,73 @@
+###################
+Documentation usage
+###################
+
+Guidelines about most valuable documentation usages.
+
+
+********
+Discover
+********
+
+* Documentation is generally used as an entry point to discover a project.
+* Newcomers are heavy users of documentation.
+* Documentation quality can make a difference between projects.
+* Documentation gives an overview of the project.
+
+
+*****
+Learn
+*****
+
+Documentation provides guidelines to go deeper in the project. It points out
+interesting topics, provides tutorials, examples...
+
+
+**************
+Remember, find
+**************
+
+* Users naturally search the documentation for some content they can't
+  remember.
+* Search is an important feature.
+
+
+************
+Make durable
+************
+
+* Some contributors leave, others come...
+* Documentation is a good place where current contributors can share with
+  potential contributors. It's an asynchronous communication channel.
+
+
+*********
+Reference
+*********
+
+Users check the documentation when they are not sure. But keep in mind that
+external documentation shouldn't be the reference for everything. As an
+example it can't replace inline documentation such as docstrings. See
+:doc:`channel-communication-flow` for details.
+
+
+********
+Redirect
+********
+
+As an entry point, documentation is a good place to redirect users to other
+services or ressources. What can't be maintained in documentation is referenced
+in documentation with hyperlinks or other straightforward redirections.
+
+
+******************************
+Share "non productive" content
+******************************
+
+Some content cannot be stored in scripts, configuration or other "productive"
+tools. As example:
+
+* vision
+* conventions
+
+Documentation can be used for that purpose.

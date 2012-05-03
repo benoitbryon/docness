@@ -1,0 +1,51 @@
+############################
+Documentation best practices 
+############################
+
+Tips, tricks and conventions about documentation content and workflows.
+
+
+**********
+Ressources
+**********
+
+* `code repository`_
+* `bugtracker`_
+* `online documentation`_
+
+
+********
+Contents
+********
+
+.. toctree::
+   :maxdepth: 2
+
+   documentation-usage
+   keep-straightforward
+   be-directive
+   documentation-is-part-of-product
+   channel-communication-flow
+
+
+******************
+Indices and tables
+******************
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
+**********
+References
+**********
+
+.. target-notes::
+
+.. _`code repository`: 
+   https://github.com/benoitbryon/documentation-best-practices
+.. _`bugtracker`: 
+   https://github.com/benoitbryon/documentation-best-practices/issues
+.. _`online documentation`:
+   http://documentation-best-practices.readthedocs.org/
