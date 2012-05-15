@@ -25,7 +25,7 @@ Contents
    keep-straightforward
    be-directive
    documentation-is-part-of-product
-   channel-communication-flow
+   external-channels/index
 
 
 ******************

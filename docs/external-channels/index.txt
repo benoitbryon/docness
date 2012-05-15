@@ -1,0 +1,19 @@
+#######################################################
+Redirect information to the right communication channel
+#######################################################
+
+Documentation is a communication channel for development team or users.
+It is suitable to receive, store and send some information.
+But there are communication flows you should redirect to other channels.
+
+Here are tips about content you shouldn't put in documentation. These patterns
+have poor value in documentation.
+
+
+.. toctree::
+
+   scripts
+   code-api
+   configuration
+   templates
+   todo
