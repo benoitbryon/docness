@@ -2,5 +2,66 @@
 Feedback over conventions
 #########################
 
-Conventions are important, but whenever you can, you should make sure you
-get feedback about convention usage, or even replace convention by feedback.
+Whenever you can, associate feedback to conventions. You may even replace
+conventions by feedback.
+
+
+*********************
+Code coverage example
+*********************
+
+As an example, a team could state about code coverage:
+
+  Developers check their code tests against code coverage.
+
+Good motivation: we have a convention.
+
+But even if the developer checks code coverage, he cannot tell if the result
+is good or bad.
+
+We need a recipe to get feedback about the convention:
+
+  Tests must cover a minimum ratio of 80% of the code, use the
+  ``evaluate-code-coverage`` command.
+
+Better: we can get feedback on demand.
+
+But, it is not restrictive. It belongs to each developer to respect the
+convention, i.e. developers can ignore it.
+With time, developers may forget it... new developers won't see it... so the
+convention becomes unused, and the documentation obsolete.
+
+The team can plug some code coverage tool in their continuous integration
+service. So that they automatically get feedback:
+
+* they can see code coverage history: does it increase or decrease? When did
+  it break?
+* they receive a notification (or see a big red light) when code coverage is
+  less than 80%.
+
+Good! Everybody automatically gets feedback.
+
+Now the whole team owns the convention: if one fails, the team has to perform
+something or get a big red alert. So, the convention is visible, it is obvious.
+Nobody can ignore it. 
+
+So we may remove the convention from the documentation. The team no longer
+needs to maintain the convention: it's live!
+
+Let's compare it to the story ot the chicken and the pig:
+
+* by writing down conventions, you get involved.
+* by replacing conventions by feedback, you get committed.
+
+
+**************
+More use cases
+**************
+
+* "No test, no commit": use commit hooks or a continuous integration service
+  to get feedback when tests get broken.
+* "Coding standards": plug a "coding standards reviewer" into a continuous
+  integration service.
+* "No TODO in PROD": write a test or a commit hook.
+* "No debug in PROD": write a test or a commit hook... where "debug"
+  definition depends on your language. For Python, check "pdb" and "print".
