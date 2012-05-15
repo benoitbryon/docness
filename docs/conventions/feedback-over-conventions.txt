@@ -1,0 +1,6 @@
+#########################
+Feedback over conventions
+#########################
+
+Conventions are important, but whenever you can, you should make sure you
+get feedback about convention usage, or even replace convention by feedback.
