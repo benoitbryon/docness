@@ -1,0 +1,15 @@
+###################
+Declare conventions
+###################
+
+The project's documentation is a good place for a team to store some
+conventions.
+
+Here are some recommandations about conventions.
+
+
+.. toctree::
+   :maxdepth: 2
+
+   feedback-over-conventions
+   documentation-language
