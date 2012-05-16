@@ -48,7 +48,7 @@ Reference
 Users check the documentation when they are not sure. But keep in mind that
 external documentation shouldn't be the reference for everything. As an
 example it can't replace inline documentation such as docstrings. See
-:doc:`channel-communication-flow` for details.
+:doc:`external-channels/index` for details.
 
 
 ********

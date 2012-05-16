@@ -13,4 +13,4 @@ straightforward.
 See also:
 
 * :doc:`/be-directive`: focus on what has been proven functional.
-* :doc:`channel-communication-flow`: redirect readers to external ressources.
+* :doc:`/external-channels/index`: redirect readers to external ressources.
