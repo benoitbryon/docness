@@ -26,6 +26,7 @@ Contents
    be-directive
    documentation-is-part-of-product
    external-channels/index
+   conventions/index
 
 
 ******************
