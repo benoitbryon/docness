@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Documentation best practices documentation build configuration file, created by
+# Docness documentation build configuration file, created by
 # sphinx-quickstart on Wed May  2 16:46:35 2012.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,7 +40,7 @@ source_suffix = '.txt'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Documentation best practices'
+project = u'Docness'
 copyright = u'2012, Benoit Bryon'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -164,7 +164,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'documentation-best-practices'
+htmlhelp_basename = 'docness'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -183,8 +183,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'DocumentationBestPractices.tex',
-   u'Documentation best practicess',
+  ('index', 'docness.tex',
+   u'Docness',
    u'Benoit Bryon', 'manual'),
 ]
 
@@ -214,8 +214,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'documentation-best-practices',
-     u'Documentation best practices',
+    ('index', 'docness',
+     u'Docness',
      [u'Benoit Bryon'], 1)
 ]
 
@@ -229,9 +229,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'documentation-best-practices',
-   u'Documentation best practices',
-   u'Benoit Bryon', 'documentation-best-practices',
+  ('index', 'docness',
+   u'Docness',
+   u'Benoit Bryon', 'docness',
    'Tips, tricks and conventions about documentation content and workflows.',
    'Miscellaneous'),
 ]
