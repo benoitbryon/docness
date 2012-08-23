@@ -1,8 +1,8 @@
-############################
-Documentation best practices
-############################
+#######
+Docness
+#######
 
-Shared vision, tips and conventions about documentation content and workflows.
+Vision, tips and conventions about documentation content and workflows.
 
 
 **********
@@ -59,7 +59,7 @@ Goal
       And a team
       When the team documents the project
       Then team members follow guidelines provided at
-      http://documentation-best-practice.readthedocs.org/
+      http://docness.readthedocs.org/
       And reference it in the project's documentation.
 
 Scope
@@ -130,8 +130,8 @@ Execute:
 
 ::
 
-  git clone git@github.com/benoitbryon/documentation-best-practices.git
-  cd documentation-best-practices/
+  git clone git@github.com/benoitbryon/docness.git
+  cd docness/
   make install
 
 If you cannot execute the Makefile, read it and adapt the few commands it
@@ -172,19 +172,14 @@ References
 
 .. target-notes::
 
-.. _`code repository`: 
-   https://github.com/benoitbryon/documentation-best-practices
-.. _`bugtracker`: 
-   https://github.com/benoitbryon/documentation-best-practices/issues
-.. _`online documentation`:
-   http://documentation-best-practices.readthedocs.org/
-.. _`give feedback`:
-   https://github.com/benoitbryon/documentation-best-practices/issues
+.. _`code repository`: https://github.com/benoitbryon/docness
+.. _`bugtracker`: https://github.com/benoitbryon/docness/issues
+.. _`online documentation`: http://docness.readthedocs.org/
+.. _`give feedback`: https://github.com/benoitbryon/docness/issues
 .. _`style guide for Sphinx-based documentations`:
    https://github.com/benoitbryon/documentation-style-guide-sphinx
 .. _`templates for Sphinx-based documentations`:
    https://github.com/benoitbryon/documentation-templates-sphinx
 .. _`Python`: http://python.org
 .. _`Virtualenv`: http://virtualenv.org
-.. _`documentation best practices`:
-   http://documentation-best-practices.readthedocs.org/
+.. _`documentation best practices`: http://docness.readthedocs.org/
