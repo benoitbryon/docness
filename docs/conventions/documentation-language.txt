@@ -14,7 +14,7 @@ As an example:
 
   `This documentation is written in english, because english is the standard
   for technical documentation about software
-  <http://documentation-best-practices.readthedocs.org/conventions/index.html#english_is_standard>`_.
+  <http://docness.readthedocs.org/conventions/index.html#english-is-standard-for-software-development>`_.
 
 Keep in mind that the language of the documentation is related to documentation
 usage: who does read it? Who does write it?

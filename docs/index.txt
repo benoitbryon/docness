@@ -1,6 +1,6 @@
-############################
-Documentation best practices 
-############################
+#######
+Docness 
+#######
 
 Tips, tricks and conventions about documentation content and workflows.
 
@@ -44,9 +44,6 @@ References
 
 .. target-notes::
 
-.. _`code repository`: 
-   https://github.com/benoitbryon/documentation-best-practices
-.. _`bugtracker`: 
-   https://github.com/benoitbryon/documentation-best-practices/issues
-.. _`online documentation`:
-   http://documentation-best-practices.readthedocs.org/
+.. _`code repository`: https://github.com/benoitbryon/docness
+.. _`bugtracker`: https://github.com/benoitbryon/docness/issues
+.. _`online documentation`:  http://docness.readthedocs.org/
