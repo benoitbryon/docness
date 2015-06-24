@@ -1,17 +1,4 @@
-#######
-Docness 
-#######
-
-Tips, tricks and conventions about documentation content and workflows.
-
-
-**********
-Ressources
-**********
-
-* `code repository`_
-* `bugtracker`_
-* `online documentation`_
+.. include:: ../README
 
 
 ********
@@ -36,14 +23,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
-
-**********
-References
-**********
-
-.. target-notes::
-
-.. _`code repository`: https://github.com/benoitbryon/docness
-.. _`bugtracker`: https://github.com/benoitbryon/docness/issues
-.. _`online documentation`:  http://docness.readthedocs.org/

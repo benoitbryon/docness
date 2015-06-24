@@ -13,3 +13,4 @@ Here are some recommandations about conventions.
 
    feedback-over-conventions
    documentation-language
+   documentation-style-guide

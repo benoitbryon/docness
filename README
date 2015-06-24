@@ -9,9 +9,9 @@ Vision, tips and conventions about documentation content and workflows.
 Ressources
 **********
 
-* `code repository`_
-* `bugtracker`_
-* `online documentation`_
+* online documentation: http://docness.readthedocs.org/
+* code repository: https://github.com/benoitbryon/docness
+* bugtracker: https://github.com/benoitbryon/docness/issues
 
 
 ******
@@ -43,9 +43,7 @@ then create efficient documentation.
 Goal
 ====
 
-.. hightlight:: gherkin
-
-::
+.. code-block:: gherkin
 
   Feature: shared vision and best practices about documentation
 
@@ -126,13 +124,11 @@ System requirements:
 
 Execute:
 
-.. hightlight:: sh
+.. code-block:: sh
 
-::
-
-  git clone git@github.com/benoitbryon/docness.git
-  cd docness/
-  make install
+   git clone git@github.com/benoitbryon/docness.git
+   cd docness/
+   make install
 
 If you cannot execute the Makefile, read it and adapt the few commands it
 contains in the ``install`` section to your needs.
@@ -153,9 +149,7 @@ Test and build
 
 Build the documentation and review your work before commit.
 
-.. highlight:: sh
-
-::
+.. code-block:: sh
 
   make build-documentation
 

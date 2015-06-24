@@ -1,0 +1,9 @@
+###############################
+Adopt documentation style guide
+###############################
+
+Readability counts. Many programming languages and frameworks provide coding
+standards, conventions or best practices to increase code readbility.
+It makes collaboration and maintenance easier.
+
+Apply the same rule to documentation.
